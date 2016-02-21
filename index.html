@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Proovitoo</h1>
+      <h1 class="project-name">Proovitöö</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/ElvoThe/Proovitoo" class="btn">View on GitHub</a>
       <a href="https://github.com/ElvoThe/Proovitoo/zipball/master" class="btn">Download .zip</a>
@@ -27,7 +27,514 @@
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Amazoni veebiteenuste demo">
+    <meta name="keywords" content="Amazon Web Services, Amazon Product Advertising API, Advertise Amazon Products on Your Site, WebserviceX.NET Currency Convertor, Metro UI" />
+    <meta name="author" content="Andres Loopmann">
+
+    <link href="css/modern.css" rel="stylesheet">
+    <link href="css/modern-responsive.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/assets/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/assets/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/assets/moment.js"></script>
+    <script type="text/javascript" src="js/assets/moment_langs.js"></script>
+
+    <script type="text/javascript" src="js/modern/dropdown.js"></script>
+    <script type="text/javascript" src="js/modern/accordion.js"></script>
+    <script type="text/javascript" src="js/modern/buttonset.js"></script>
+    <script type="text/javascript" src="js/modern/carousel.js"></script>
+    <script type="text/javascript" src="js/modern/input-control.js"></script>
+    <script type="text/javascript" src="js/modern/pagecontrol.js"></script>
+    <script type="text/javascript" src="js/modern/rating.js"></script>
+    <script type="text/javascript" src="js/modern/slider.js"></script>
+    <script type="text/javascript" src="js/modern/tile-slider.js"></script>
+    <script type="text/javascript" src="js/modern/tile-drag.js"></script>
+    <script type="text/javascript" src="js/modern/calendar.js"></script>
+
+	<script type="text/javascript" src="js/modern/dialog.js"></script>
+
+	<script type="text/javascript" src="js/clientFuncs.js"></script>
+
+    <title>Amazoni veebiteenuste demo</title>
+</head>
+<body class="metrouicss" onload="prettyPrint()">
+
+<div class="page">
+<div class="nav-bar">
+    <div class="nav-bar-inner padding10">
+        <span class="pull-menu"></span>
+
+        <a href="."><span class="element brand">
+            <img class="place-left" src="graphics/AWS_Basket_blue.png" style="height: 32px"/>
+          Amazoni veebiteenuste demo <small>1.00</small>
+        </span></a>
+
+        <div class="divider"></div>
+
+        <ul class="menu">
+            <li><a href="/subjects/AL-demos.html" title="Choice of demos from different times and matters.">Kõik demod</a></li>
+            <li data-role="dropdown">
+                <a href="#">Tootereklaam</a>
+                <ul class="dropdown-menu">
+                    <li><a href="APA_demo.php">Demo</a></li>
+                </ul>
+            </li>
+          <li class="place-right">
+            <!--<a href="/downloads/AmazonWS - Copy.zip" id="sourceCode">Lähtekood</a>-->
+          </li>
+        </ul>
+
+    </div>
+</div>
+</div>
+
+<div class="page secondary">
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1>
+        Tootereklaam<small>demo</small>
+      </h1>
+      <a href="." class="back-button big page-back"></a>
+    </div>
+  </div>
+
+  <div class="page-region">
+    <div class="page-region-content">
+
+      <div class="page-control span10" data-role="page-control">
+        <span class="menu-pull"></span>
+        <div class="menu-pull-bar"></div>
+
+        <ul>
+          <li class="active">
+            <a href="#page1">
+              <!--<i class="icon-equalizer"></i>-->Otsing
+            </a>
+          </li>
+          <li>
+            <a href="#page2">Juhend</a>
+          </li>
+          <li class="place-right">
+            <a href="#page4">
+              <i class="icon-cog nrm"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="frames">
+          <div class="frame active" id="page1">
+            <table style="width:100%;">
+              <tr>
+                <td>
+                  <b>Kategooria</b>
+                  <br></br>
+                  <div class="input-control select" name="searchIndex" id="searchIndex" style="width:175px;">
+                    <select>
+                      <!--<option value="All" selected="true">Kõik</option>-->
+                      <option value="Apparel">Rõivad</option>
+                      <option value="Appliances">Seadmed</option>
+                      <option value="ArtsAndCrafts">Kunst ja käsitöö</option>
+                      <option value="Automotive">Autokaubad</option>
+
+                      <option value="Baby">Beebikaubad</option>
+                      <option value="Beauty">Ilutarbed</option>
+                      <option value="Blended">Segakaubad</option>
+                      <option value="Books">Raamatud</option>
+                      <option value="Classical">Klassika</option>
+                      <option value="Collectibles">Kogutavad</option>
+                      <option value="DigitalMusic">Digitaalmuusika</option>
+                      <option value="DVD" selected="true">DVD</option>
+                      <option value="Electronics">Elektroonika</option>
+                      <option value="GourmetFood">Gurmeetoidud</option>
+
+                      <option value="Grocery">Toidukaubad</option>
+                      <option value="HealthPersonalCare">Tervishoiutooted</option>
+                      <option value="HomeGarden">Aiakaubad</option>
+                      <option value="Industrial">Tööstuskaubad</option>
+                      <option value="Jewelry">Juveelitooted</option>
+                      <option value="KindleStore">Kindle pood</option>
+                      <option value="Kitchen">Köögikaubad</option>
+                      <option value="LawnAndGarden">Muru ja aiakaubad</option>
+                      <option value="Magazines">Ajakirjad</option>
+                      <option value="Marketplace">Turukaubad</option>
+
+                      <option value="Miscellaneous">Varia</option>
+                      <option value="MobileApps">Mobiilirakendused</option>
+                      <option value="MP3Downloads">MP3 allalaadimised</option>
+                      <option value="Music">Muusika</option>
+                      <option value="MusicalInstruments">Muusikariistad</option>
+                      <option value="MusicTracks">Muusikapalad</option>
+                      <option value="OfficeProducts">Kontorikaubad</option>
+                      <option value="OutdoorLiving">Vaba aja kaubad</option>
+                      <option value="PCHardware">Arvutiriistvara</option>
+                      <option value="PetSupplies">Lemmikloomatarbed</option>
+
+                      <option value="Photo">Fotokaubad</option>
+                      <option value="Shoes">Jalatsid</option>
+                      <option value="Software">Tarkvara</option>
+                      <option value="SportingGoods">Sporditarbed</option>
+                      <option value="Tools">Tööriistad</option>
+                      <option value="Toys">Mänguasjad</option>
+                      <option value="UnboxVideo">Unbox video</option>
+                      <option value="VHS">VHS tooted</option>
+                      <option value="Video">Videokaubad</option>
+                      <option value="VideoGames">Videomängud</option>
+
+                      <option value="Watches">Kellad</option>
+                      <option value="Wireless">WiFi tooted</option>
+                      <option value="WirelessAccessories">WiFi tarvikud</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <b>Märksõnad</b>
+                  <br></br>
+                  <div class="input-control text span3">
+                    <input type="text" placeholder="Sisesta 'Sopranos' vms" id="txtKeyWords"/>
+                    <button class="btn-clear"></button>
+                  </div>
+                </td>
+                <td>
+                  <b>Valuuta</b>
+                  <br></br>
+                  <div class="input-control select" id="selCurrencies" style="width:150px;">
+                    <select>
+                      <option>AFA-Afghanistan Afghani</option>
+                      <option>ALL-Albanian Lek</option>
+                      <option>DZD-Algerian Dinar</option>
+                      <option>ARS-Argentine Peso</option>
+                      <option>AWG-Aruba Florin</option>
+                      <option>AUD-Australian Dollar</option>
+                      <option>BSD-Bahamian Dollar</option>
+                      <option>BHD-Bahraini Dinar</option>
+                      <option>BDT-Bangladesh Taka</option>
+                      <option>BBD-Barbados Dollar</option>
+                      <option>BZD-Belize Dollar</option>
+                      <option>BMD-Bermuda Dollar</option>
+                      <option>BTN-Bhutan Ngultrum</option>
+                      <option>BOB-Bolivian Boliviano</option>
+                      <option>BWP-Botswana Pula</option>
+                      <option>BRL-Brazilian Real</option>
+                      <option>GBP-British Pound</option>
+                      <option>BND-Brunei Dollar</option>
+                      <option>BIF-Burundi Franc</option>
+                      <option>XOF-CFA Franc (BCEAO)</option>
+                      <option>XAF-CFA Franc (BEAC)</option>
+                      <option>KHR-Cambodia Riel</option>
+                      <option>CAD-Canadian Dollar</option>
+                      <option>CVE-Cape Verde Escudo</option>
+                      <option>KYD-Cayman Islands Dollar</option>
+                      <option>CLP-Chilean Peso</option>
+                      <option>CNY-Chinese Yuan</option>
+                      <option>COP-Colombian Peso</option>
+                      <option>KMF-Comoros Franc</option>
+                      <option>CRC-Costa Rica Colon</option>
+                      <option>HRK-Croatian Kuna</option>
+                      <option>CUP-Cuban Peso</option>
+                      <option>CYP-Cyprus Pound</option>
+                      <option>CZK-Czech Koruna</option>
+                      <option>DKK-Danish Krone</option>
+                      <option>DJF-Dijibouti Franc</option>
+                      <option>DOP-Dominican Peso</option>
+                      <option>XCD-East Caribbean Dollar</option>
+                      <option>EGP-Egyptian Pound</option>
+                      <option>SVC-El Salvador Colon</option>
+                      <option>EEK-Estonian Kroon</option>
+                      <option>ETB-Ethiopian Birr</option>
+                      <option>EUR-Euro</option>
+                      <option>FKP-Falkland Islands Pound</option>
+                      <option>GMD-Gambian Dalasi</option>
+                      <option>GHC-Ghanian Cedi</option>
+                      <option>GIP-Gibraltar Pound</option>
+                      <option>XAU-Gold Ounces</option>
+                      <option>GTQ-Guatemala Quetzal</option>
+                      <option>GNF-Guinea Franc</option>
+                      <option>GYD-Guyana Dollar</option>
+                      <option>HTG-Haiti Gourde</option>
+                      <option>HNL-Honduras Lempira</option>
+                      <option>HKD-Hong Kong Dollar</option>
+                      <option>HUF-Hungarian Forint</option>
+                      <option>ISK-Iceland Krona</option>
+                      <option>INR-Indian Rupee</option>
+                      <option>IDR-Indonesian Rupiah</option>
+                      <option>IQD-Iraqi Dinar</option>
+                      <option>ILS-Israeli Shekel</option>
+                      <option>JMD-Jamaican Dollar</option>
+                      <option>JPY-Japanese Yen</option>
+                      <option>JOD-Jordanian Dinar</option>
+                      <option>KZT-Kazakhstan Tenge</option>
+                      <option>KES-Kenyan Shilling</option>
+                      <option>KRW-Korean Won</option>
+                      <option>KWD-Kuwaiti Dinar</option>
+                      <option>LAK-Lao Kip</option>
+                      <option>LVL-Latvian Lat</option>
+                      <option>LBP-Lebanese Pound</option>
+                      <option>LSL-Lesotho Loti</option>
+                      <option>LRD-Liberian Dollar</option>
+                      <option>LYD-Libyan Dinar</option>
+                      <option>LTL-Lithuanian Lita</option>
+                      <option>MOP-Macau Pataca</option>
+                      <option>MKD-Macedonian Denar</option>
+                      <option>MGF-Malagasy Franc</option>
+                      <option>MWK-Malawi Kwacha</option>
+                      <option>MYR-Malaysian Ringgit</option>
+                      <option>MVR-Maldives Rufiyaa</option>
+                      <option>MTL-Maltese Lira</option>
+                      <option>MRO-Mauritania Ougulya</option>
+                      <option>MUR-Mauritius Rupee</option>
+                      <option>MXN-Mexican Peso</option>
+                      <option>MDL-Moldovan Leu</option>
+                      <option>MNT-Mongolian Tugrik</option>
+                      <option>MAD-Moroccan Dirham</option>
+                      <option>MZM-Mozambique Metical</option>
+                      <option>MMK-Myanmar Kyat</option>
+                      <option>NAD-Namibian Dollar</option>
+                      <option>NPR-Nepalese Rupee</option>
+                      <option>ANG-Neth Antilles Guilder</option>
+                      <option>NZD-New Zealand Dollar</option>
+                      <option>NIO-Nicaragua Cordoba</option>
+                      <option>NGN-Nigerian Naira</option>
+                      <option>KPW-North Korean Won</option>
+                      <option>NOK-Norwegian Krone</option>
+                      <option>OMR-Omani Rial</option>
+                      <option>XPF-Pacific Franc</option>
+                      <option>PKR-Pakistani Rupee</option>
+                      <option>XPD-Palladium Ounces</option>
+                      <option>PAB-Panama Balboa</option>
+                      <option>PGK-Papua New Guinea Kina</option>
+                      <option>PYG-Paraguayan Guarani</option>
+                      <option>PEN-Peruvian Nuevo Sol</option>
+                      <option>PHP-Philippine Peso</option>
+                      <option>XPT-Platinum Ounces</option>
+                      <option>PLN-Polish Zloty</option>
+                      <option>QAR-Qatar Rial</option>
+                      <option>ROL-Romanian Leu</option>
+                      <option>RUB-Russian Rouble</option>
+                      <option>WST-Samoa Tala</option>
+                      <option>STD-Sao Tome Dobra</option>
+                      <option>SAR-Saudi Arabian Riyal</option>
+                      <option>SCR-Seychelles Rupee</option>
+                      <option>SLL-Sierra Leone Leone</option>
+                      <option>XAG-Silver Ounces</option>
+                      <option>SGD-Singapore Dollar</option>
+                      <option>SKK-Slovak Koruna</option>
+                      <option>SIT-Slovenian Tolar</option>
+                      <option>SBD-Solomon Islands Dollar</option>
+                      <option>SOS-Somali Shilling</option>
+                      <option>ZAR-South African Rand</option>
+                      <option>LKR-Sri Lanka Rupee</option>
+                      <option>SHP-St Helena Pound</option>
+                      <option>SDD-Sudanese Dinar</option>
+                      <option>SRG-Surinam Guilder</option>
+                      <option>SZL-Swaziland Lilageni</option>
+                      <option>SEK-Swedish Krona</option>
+                      <option>TRY-Turkey Lira</option>
+                      <option>CHF-Swiss Franc</option>
+                      <option>SYP-Syrian Pound</option>
+                      <option>TWD-Taiwan Dollar</option>
+                      <option>TZS-Tanzanian Shilling</option>
+                      <option>THB-Thai Baht</option>
+                      <option>TOP-Tonga Pa'anga</option>
+                      <option>TTD-Trinidad&amp;Tobago Dollar</option>
+                      <option>TND-Tunisian Dinar</option>
+                      <option>TRL-Turkish Lira</option>
+                      <option selected="true" value="1">USD-U.S. Dollar</option>
+                      <option>AED-UAE Dirham</option>
+                      <option>UGX-Ugandan Shilling</option>
+                      <option>UAH-Ukraine Hryvnia</option>
+                      <option>UYU-Uruguayan New Peso</option>
+                      <option>VUV-Vanuatu Vatu</option>
+                      <option>VEB-Venezuelan Bolivar</option>
+                      <option>VND-Vietnam Dong</option>
+                      <option>YER-Yemen Riyal</option>
+                      <option>YUM-Yugoslav Dinar</option>
+                      <option>ZMK-Zambian Kwacha</option>
+                      <option>ZWD-Zimbabwe Dollar</option>
+                    </select>
+                  </div>
+                </td>
+                <td style="vertical-align:bottom;">
+                  <button class="standart default" onclick="btnOtsi(event)">
+                    Otsi
+                  </button>
+                </td>
+              </tr>
+            </table>
+
+            <!--<hr></hr>-->
+            <div class="nav-bar bg-color-darken" id="myNavBar">
+              <div class="nav-bar-inner">
+                <a href="#">
+                  <span class="element brand" style="width:4cm;">
+                    <strong id="rowCnt" class="fg-color-yellow">0</strong> leidu
+                  </span>
+                </a>
+                <span class="divider"></span>
+
+                <ul class="menu">
+                  <li>
+                    <a href="#" id="pageFirst">Esimene lk</a>
+                  </li>
+                  <li>
+                    <a href="#" id="pagePrev">Eelmine lk</a>
+                  </li>
+                  <li>
+                    <a></a>
+                  </li>
+                  <li>
+                    <a>
+                      <strong id="pageNr" class="fg-color-yellow">1</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="fg-color-yellow">/</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <strong id="pageCnt" class="fg-color-yellow">1</strong>
+                    </a>
+                  </li>
+                  <li class="place-right">
+                    <a href="#" id="pageLast">Viimane lk</a>
+                  </li>
+                  <li class="place-right">
+                    <a href="#" id="pageNext">Järgmine lk</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--<p></p>-->
+            <div id="divTulemused" style="height:200px;overflow:auto;">
+
+            </div>
+          </div>
+          <div class="frame" id="page2">
+            <h2>
+              <u>Juhend</u>
+            </h2>
+            <p>
+              Amazon tootereklaami demo lehel on kasutada 3 sakki: a) otsing, b) juhend (siinne tekst) ja c) sätted (kõige 
+              parempoolsem, hammasratta sarnase ikooniga). 
+              Sätetes on võimalik muuta mõningaid otsingu parameetreid.
+            </p>
+            <br></br>
+            <h2>
+              <u>Demo saamislugu</u>
+            </h2>
+            <p>
+              Tänapäeval tuleb tihti ette, et tuleb sooritada nn prooviülesanne. Ülesanne, mis antud demo tekitas, 
+              oli järgmine:
+            </p>
+            <p>
+              "Teha veebi lehekülg mille kaudu on võimalik otsida tooteid Amazon’i toodete hulgast.
+              Kasutades Amazon’i Product Advertising API (võite ka REST’i ) teenuseid pärida amazon’ist otsingu sõna alusel toodete nimekiri.
+              Näidata tulemusi 13’ne kaupa lehel koos hinnaga.
+              Kasutades valuutakursi kalkulaator teenust võimaldada kasutajal valida endale sobivaim valuuta kurss ja näidata tulemusi selle kursiga.
+              Hinna/valuuta muutus realiseerida AJAX’iga update’ga mitte full page load’iga.
+
+              Tehke nii, et leht näeks natukenegi ilus välja ka ...."
+            </p>
+            <p>
+              Tulemuste 13-ne kaupa näitamine osutus oluliseks detailiks: Amazon teenus väljastab maksimaalselt 10 
+              kirjet lehekülje kohta (ja maksimaalselt 10 lehekülge). Seega tuli serveri poolt küsida tulemusi 10-ne kaupa 
+              niikaua, kuni 13 kirjet täis sai.
+            </p>
+            <p>
+              Kuna etteheiteid lahendusele ei olnud ning et tehtud oli lisaks veel ka sätete leht, siis arvatavasti võin 
+              endale hindeks panna "suurepärane".
+            </p>
+            <small>Kokkuvõte kirjutatud 11-ndal augustil 2013.</small>
+          </div>
+          <div class="frame" id="page4">
+            <h2>
+              <u>Sätted</u></h2>
+            <table style="width:100%;">
+              <tr>
+                <td>
+                  <b>Kirjete arv lehel</b>
+                  <br></br>
+                  <div class="input-control select" id="selPageSize" style="width:150px;">
+                    <select>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="13" selected="selected">13</option>
+                      <option value="20">20</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="500">500</option>
+                      <option value="1000">1000</option>
+                      <option value="2000">2000</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <b>Näita ka pilte</b>
+                  <br></br>
+                  <label class="input-control switch" id="switchPictures">
+                    <input type="checkbox"/>
+                    <span class="helper">Ei</span>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+   </div>
+  </div>
+</div>
+
+    <div class="page">
+        <div class="nav-bar">
+            <div class="nav-bar-inner padding10">
+                <span class="element">
+                    2013, Amazoni veebiteenuste demo &copy; <a class="fg-color-white" href="mailto:aloopmann@hotmail.com">Andres Loopmann</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="js/assets/github.info.js"></script>
+    <script type="text/javascript" src="js/assets/google-analytics.js"></script>
+    <script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/sharrre/jquery.sharrre-1.3.4.min.js"></script>
+
+    <script>
+        $('#shareme').sharrre({
+            share: {
+                googlePlus: true
+                ,facebook: true
+                ,twitter: true
+                ,delicious: true
+            },
+            urlCurl: "js/sharrre/sharrre.php",
+            buttons: {
+                googlePlus: {size: 'tall'},
+                facebook: {layout: 'box_count'},
+                twitter: {count: 'vertical'},
+                delicious: {size: 'tall'}
+            },
+            hover: function(api, options){
+                $(api.element).find('.buttons').show();
+            }
+        });
+    </script>
+
+    </body>
+</html></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/ElvoThe/Proovitoo">Proovitoo</a> is maintained by <a href="https://github.com/ElvoThe">ElvoThe</a>.</span>
